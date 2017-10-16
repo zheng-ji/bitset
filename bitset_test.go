@@ -1,0 +1,25 @@
+package engine
+
+import (
+	"fmt"
+	"testing"
+	"time"
+)
+
+/*
+* [20000]
+* 393.504µs
+*
+ */
+func TestBitInts(b *testing.T) {
+	d := Empty()
+	num := 20000
+	d.Set(uint(num))
+	start := time.Now()
+	//d.Bit2Ints()
+	fmt.Println(d.Bit2Ints())
+
+	t := time.Now()
+	elapsed := t.Sub(start)
+	fmt.Println(elapsed)
+}
