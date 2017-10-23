@@ -1,3 +1,5 @@
+// zheng-ji.info
+
 package bitset
 
 import (
@@ -15,8 +17,9 @@ func TestBitInts(b *testing.T) {
 	d := Empty()
 	num := 20000
 	d.Set(uint(num))
+
 	start := time.Now()
-	//d.Bit2Ints()
+
 	fmt.Println(d.Bit2Ints())
 
 	t := time.Now()

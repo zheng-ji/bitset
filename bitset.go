@@ -1,3 +1,5 @@
+// zheng-ji.info
+
 package bitset
 
 import (
